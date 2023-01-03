@@ -1,0 +1,33 @@
+.photo-cards {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50%;
+    row-gap: 145px;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: xx-large;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%,-50%);
+
+    animation: flash 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flash {
+    0% {
+    }
+
+    50% {
+        
+        transform: translate(-50%,-50%) scale(120%);
+    }
+
+    100% {
+    }
+}
